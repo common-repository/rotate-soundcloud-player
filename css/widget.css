@@ -1,0 +1,124 @@
+	.SCWidget {
+		width: 100%;
+		background-color: #fff;
+		font-family: "proxima-nova", Arial, Helvetica, Times, sans-serif;
+		margin-top: 20px;
+	}
+	.SCWidget .hidden {
+		display: none;
+	}
+	.widget .SCWidget img {
+		border-radius: none;
+		box-shadow: none;
+	}
+	.SCWidget .darkTop {
+		background-color: #f2f2f2;
+		color: white;
+		padding-bottom: 10px;
+	}
+/*	.SCWidget .PlayStopButton {
+		height: 19px;
+		width: 16px;
+	}
+	.SCWidget .PlayStopButton {
+		background-image: url(images/play.png);
+	}
+	.SCWidget .PlayStopButton.stop {
+		background-image: url(images/stop.png);
+	}*/
+	.SCWidget .controls {
+		text-align: center;
+		color: #999;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.SCWidget i.fa-play {
+		font-size: 30px;
+	}
+	.SCWidget .rightArrow i,
+	.SCWidget .leftArrow i {
+		vertical-align: middle;
+	}
+	.SCWidget .controls > div {
+		display: inline-block;
+		height: 19px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		cursor: pointer;
+		vertical-align: middle;
+	}
+	.SCWidget .controls > div.play {
+		height: 15px;
+	}
+	.SCWidget .title {
+		text-align: center;
+	}
+	.SCWidget .title a.titleLink {
+		color: #fff;
+		text-decoration: none;
+
+	}
+	.SCWidget .artWork {
+		width: 50%;
+	}
+	.SCWidget .artWork img {
+		width: 100%;
+	}
+	
+	.SCWidget .trackTitle a {
+		text-decoration: none;
+	}
+
+	.SCWidget .middleArtistAndTrack > div.howLongAgo {
+		color: #909090;
+		font-size: 12px;
+		width: 40%;
+		padding: 5%;
+	}
+
+	.SCWidget .middleArtistAndTrack > div.artWork {
+		position: relative;
+		width: 100%;
+	}
+	.SCWidget .artWork .trackTitle {
+		padding: 5%;
+		font-size: 16px;
+		font-weight: bold;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		margin: 10px;
+		background-color: rgba(0,0,0,0.5);
+	}
+	.SCWidget .artWork .trackTitle a {
+		color: #E6E6E6;
+	}
+	.SCWidget .bottomFooter {
+		clear: both;
+		background-color: #f2f2f2;
+		height: 32px;
+	}
+	.SCWidget .soundCloudLink {
+		float: left;
+		line-height: 32px;
+		margin-left: 15px;
+	}
+	.SCWidget .bottomStat {
+		float: right;
+		color: #909090;
+		line-height: 32px;
+		margin-right: 10px;
+		font-size: 12px;
+	}
+	.SCWidget .bottomStat:before {
+		display: inline-block;
+		content: "";
+		width: 16px;
+		height: 32px;
+		vertical-align: top;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.SCWidget .bottomStat.play_count:before { background-size: 16px 16px; background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+c3RhdHNfcGxheSA0PC90aXRsZT48ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz48cGF0aCBkPSJNNCAxM3YtMTBsOSA1LTkgNXoiIGZpbGw9IiM5OTkiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==); }
+	.SCWidget .bottomStat.favoritings_count:before { background-size: 16px 16px; background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+c3RhdHNfbGlrZXNfZ3JleTwvdGl0bGU+PGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+PHBhdGggZD0iTTEwLjgwNDk4MTggM2MtMi4wMjAyNjYwMTAwMDAwMDAzIDAtMi44MDQzMjg5NTAwMDAwMDA0IDIuMzQ0ODY0ODYwMDAwMDAwNC0yLjgwNDMyODk1MDAwMDAwMDQgMi4zNDQ4NjQ4NjAwMDAwMDA0cy0uNzg3Njg4OTc5OTk5OTk5NS0yLjM0NDg2NDg2MDAwMDAwMDQtMi44MDQ2MDc5MDk5OTk5OTk2LTIuMzQ0ODY0ODYwMDAwMDAwNGMtMS43MDE3MzE3NjAwMDAwMDA0IDAtMy40NDc2NzA5NCAxLjA5NTkyNjk0LTMuMTY1OTU0OTggMy41MTQzMDUzMi4zNDM2Mzc2OSAyLjk1MjQzMjQzIDUuNzI0ODI5MjA5OTk5OTk5IDYuNDc4NTY4NDggNS45NjMwMTk2MTk5OTk5OTkgNi40ODY3NTAzOC4yMzgxOTA0MDAwMDAwMDA1OC4wMDgxODIwOTk5OTk5OTkwODIgNS43Mzc4NzMyMjAwMDAwMDEtMy43MjI1MTc4OTk5OTk5OTk3IDUuOTg4MzQ5NDIwMDAwMDAwNS02LjQ5OTgxNTIwMDAwMDAwMDUuMjA2NDA1NzAwMDAwMDAxMjUtMi4zMDAyNzAyNjk5OTk5OTk1LTEuNDc0NzQ1Mzk5OTk5OTk5OC0zLjUwMTI0MDQ5OTk5OTk5OTgtMy4xNzY0NzcxOTk5OTk5OTktMy41MDEyNDA0OTk5OTk5OTk4eiIgZmlsbD0iIzk5OSIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+); }
+	.SCWidget .bottomStat.download_count:before { background-size: 16px 16px; background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+UmVjdGFuZ2xlIDMxPC90aXRsZT48ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz48cGF0aCBkPSJNMyAxMXYyaDEwdi0yaC0xMHptMC03aDEwbC01IDYtNS02em0zLTJ2Mmg0di0yaC00eiIgZmlsbD0iIzk5OSIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+); }
